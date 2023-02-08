@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/5932369e2f.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cinza: 'rgb(129 129 129)',
+                        price: 'rgb(192 192 192)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <style>
+        @font-face {
+            font-family: 'Lato', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            src: url();
+        }
+
+
+        body {
+            background-color: antiquewhite;
+            overflow-x: hidden;
+        }
+
+        .container {
+
+            margin: 2rem;
+            display: flex;
+            width: 10vw;
+            place-content: center;
+            height: 41rem;
+        }
+
+        .texto {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-top-right-radius: 1.5rem;
+            /* 24px */
+            border-bottom-right-radius: 1.5rem;
+            /* 24px */
+            background-color: white;
+            padding: 2rem;
+            /* 32px */
+            width: 20rem;
+            /* 288px */
+        }
+
+    </style>
+</head>
+
+<body>
+    v
+    <div class="container">
+
+        <div class="flex m-8 ">
+            <img class="rounded-l-3xl" src="images/image-product-desktop.jpg" width="400px" height="200px">
+            <div class="texto">
+                <p class="pl-4 pb-4 text-cinza ">PERFUME</p>
+                <h1 class="font-bold text-4xl p-2">Gabrielle Esssence Eau De Parfum</h1>
+
+                <p class=" text-cinza text-lg break-keep py-4">A floral, solar and voluptuous Interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL</p>
+                <div class="flex justify-evenly pt-8 pb-11 text-center">
+                    <H2 class="text-3xl font-bold text-green-500 ">$149,99</H2>
+                    <p class="text-price line-through pt-[6px]">$169,99</p>
+                </div>
+                <div class="effect-hover">
+                    <a href="https://www.chanel.com/br/perfumes/p/120525/gabrielle-chanel-eau-de-parfum-spray/?gclid=EAIaIQobChMItLCUse2D_QIVDWSRCh1Skw4xEAYYBCABEgIv-fD_BwE"
+                        target="_blank"
+                        class=" p-4 justify-evenly text-2xl font-bold rounded-lg text-center text-white flex bg-green-500 hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring focus:ring-green-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="34" fill="currentColor"
+                            class="pr-[12px]" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        Add to Cart</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>
